@@ -100,6 +100,9 @@ Terraform v0.11.8
 
 
 ## Usage
+### create s3 bucket
+create a bucket to save tfsatefile.
+![bucket.gif](https://github.com/monstar-lab/terraform-project-template/blob/master/files/bucket.gif)
 
 ## Licence
 This software is released under the MIT License, see LICENSE.
