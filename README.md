@@ -104,9 +104,35 @@ Terraform v0.11.8
 create a bucket to save tfsatefile.
 ![bucket.gif](https://github.com/monstar-lab/terraform-project-template/blob/master/files/bucket.gif)
 
-## Licence
-This software is released under the MIT License, see LICENSE.
+```
+aws s3 --profile {your aws-cli profile} --region ap-northeast-1 mb s3://{bucket name}
+aws s3 --profile {your aws-cli profile} --region ap-northeast-1 ls | grep {bucket name}
+```
+
+### terraform commands
+#### init
+```
+$ make init ENV={env} REGION=ap-northeast-1 BUCKET_NAME={bucket name} PROFILE={your aws-cli profile}
+```
+
+#### plan
+```
+$ make plan ENV={env} REGION=ap-northeast-1 BUCKET_NAME={bucket name} PROFILE={your aws-cli profile}
+```
+
+#### apply
+```
+$ make apply ENV={env} REGION=ap-northeast-1 BUCKET_NAME={bucket name} PROFILE={your aws-cli profile}
+```
+
+#### destroy
+```
+$ make destroy ENV={env} REGION=ap-northeast-1 BUCKET_NAME={bucket name} PROFILE={your aws-cli profile}
+```
 
 ## Authors
+Takayuki Niinuma  
+GitHub : @monstar-taka
 
 ## References
+- [https://www.terraform.io/docs/providers/aws/](https://www.terraform.io/docs/providers/aws/)
