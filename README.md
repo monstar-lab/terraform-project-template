@@ -7,9 +7,9 @@
 
 ## Setup
 ### git-secrets
-Please refer to this link
-[https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)
-Execute this command in the repository directory of github
+Please refer to this link  
+[https://github.com/awslabs/git-secrets](https://github.com/awslabs/git-secrets)  
+Execute this command in the repository directory of github.
 ```
 $ git secrets --install
 ✓ Installed commit-msg hook to .git/hooks/commit-msg
@@ -18,7 +18,7 @@ $ git secrets --install
 ```
 
 ### aws cli
-Please refer to this link
+Please refer to this link  
 [https://github.com/aws/aws-cli](https://github.com/aws/aws-cli)
 
 If you are using [Homebrew](https://brew.sh/), there is also such a method.
@@ -30,8 +30,8 @@ $ aws --version
 aws-cli/1.16.13 Python/3.6.2 Darwin/17.7.0 botocore/1.12.3
 ```
 
-Execute this command to set aws-cli.
-In doing so, you need the IAM account access key and secret key.
+Execute this command to set aws-cli.  
+In doing so, you need the IAM account access key and secret key.  
 Unless otherwise specified, Region is set to **ap-northeast-1** and Output is set to **json**
 ```
 $ aws configure --profile user1
